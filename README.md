@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# My home printer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Story time!
 
-## Available Scripts
+My old and wireless printer has died. Oh crap.  
+May he rest in peace (Or not, printers are our slaves after all)  
+My father got a new printer, hooray! But f**\*** hell it is a wired printer :(  
+And then I realized...  
+![It's free real estate!](https://i.kym-cdn.com/photos/images/original/001/170/759/7c9.gif)  
+Well... if a printer is wired, why can't I use my knowledge to make it wireless???  
+Or even better! Not just wireless but I doesn't even need to install drivers on every computer that connects to the printer!  
+So I made this little project in less than an hour, and now it runs on my home network on a Raspberry Pi which is connected to the printer with USB and serves the website on the local WiFi network.
 
-In the project directory, you can run:
+Feel free to use this for your own purposes :)
 
-### `npm start`
+In the server side I used NodeJS with [express.js](https://expressjs.com/), to send files I used [multer](https://github.com/expressjs/multer) and to print I used [node-printer](https://github.com/tojocky/node-printer).  
+In the client side I used React with [MaterialUI](https://material-ui.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Follow me on twitter](https://img.shields.io/twitter/follow/realKfiros?style=social)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Before you run the project
 
-### `npm test`
+```bash
+npm install
+npm rebuild printer --build-from-source  # if you run on Windows you don't need to do this
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
 
-### `npm run build`
+```
+Copyright (c) 2021 Kfir Nevo
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the terms of the MIT license. See the [license](LICENSE) file.
